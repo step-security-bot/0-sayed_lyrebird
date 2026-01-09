@@ -66,3 +66,18 @@ updates:
       github-actions:
         patterns:
           - '*'
+
+  - package-ecosystem: docker
+    directory: /apps/analysis
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /apps/gateway
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /apps/ingestion
+    schedule:
+      interval: daily
